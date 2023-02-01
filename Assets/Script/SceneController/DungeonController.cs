@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class DungeonController : MonoBehaviour
 {
-    // Start is called before the first frame update
+	public GameObject playerCard;
+	public int playerHealth, playerDamageRange, playerArmor;
+	
+	public int DicePoints;
+	
+	public PlayerController playerController;
+	
     void Start()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
+	
 }
