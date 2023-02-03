@@ -12,7 +12,8 @@ public class Game : MonoBehaviour
    public static Dice Dice;
 
    public static Player Player;
-   
+
+   private LoopStateMachine _loopStateMachine;
 
    [SerializeField]
    private PlayerMap _playerOnMap;
@@ -25,6 +26,7 @@ public class Game : MonoBehaviour
    private void InitParams() {
       Dice = new Dice();
       Player = new Player();
+      _loopStateMachine = new LoopStateMachine();
    }
 
    private void InitGame() {
