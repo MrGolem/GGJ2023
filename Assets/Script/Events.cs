@@ -12,4 +12,9 @@ public class Events {
     public static Action StartMove;
     public static Action EndMove;
   }
+  
+  public class Choose {
+    public static Action<ChooseAction> OpenChooseWindow;
+    public static Action CloseChooseWindow;
+  }
 }

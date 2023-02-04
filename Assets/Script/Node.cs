@@ -15,6 +15,7 @@ public class Node : MonoBehaviour {
   }
 
   public int PositionNumber { get; set; }
+  public NodeType NodeType { get; set; }
 }
 
 public enum NodeType {

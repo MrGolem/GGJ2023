@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -7,9 +8,16 @@ using UnityEngine.UI;
 public class DiceView : MonoBehaviour {
     [SerializeField]
     private Button _button;
+    [SerializeField]
+    private GameObject _dice;
 
     [SerializeField]
-    private TextMeshProUGUI _anim;
+    private Transform _topPoint;
+    [SerializeField]
+    private Transform _bottomPoint;
+
+    [SerializeField]
+    private List<Vector3> _diceSides;
 
     private bool IsCanUse = true;
 
@@ -21,10 +29,15 @@ public class DiceView : MonoBehaviour {
         Events.StateControllerEvent.StartState(GameStateEnum.RollDice);
         IsCanUse = false;
 
-        var sequence = DOTween.Sequence();
+        _dice.transform.localRotation = Quaternion.Euler(_diceSides[Game.Dice.CurrentDiceCount - 1]);
 
-        sequence.AppendInterval(1f).OnComplete(() => {
-            _anim.text = Game.Dice.CurrentDiceCount.ToString();
+        var moveSequence = DOTween.Sequence();
+        moveSequence.Append(_dice.transform.DOLocalMove(_topPoint.localPosition, 0.5f).SetEase(Ease.OutSine));
+        moveSequence.Append(_dice.transform.DOLocalMove(_bottomPoint.localPosition, 0.5f).SetEase(Ease.OutBounce));
+        _dice.transform.DOShakeRotation(1f);
+        
+
+        moveSequence.OnComplete(() => {
             Events.StateControllerEvent.StartState(GameStateEnum.WalKOnMap);
         });
     }
