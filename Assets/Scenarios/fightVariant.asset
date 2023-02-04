@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93117f1557a34b4e8c092b218932f588, type: 3}
   m_Name: fightVariant
   m_EditorClassIdentifier: 
-  VariantName: Go Fight
+  VariantName: Wait for the host here and then kill him
   AfterChooseConfig: {fileID: 11400000, guid: f39acfa0e68aa45d69671570ba7114ff, type: 2}

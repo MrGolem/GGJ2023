@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d07dcd1c9641fa89b2c7d94cc2929c, type: 3}
+  m_Name: Lair
+  m_EditorClassIdentifier: 
+  Title: A lair with a pile of leftovers
+  MainDescription: You found yourself in a cave that looks like the lair of some
+    beast, bones are everywhere. In the middle of the cave, something is visibly
+    moving.
+  Image: {fileID: 0}
+  ChooseVariants:
+  - {fileID: 11400000, guid: dce280333ff9eec4eb8288710b74b38c, type: 2}
+  - {fileID: 11400000, guid: 4d332cc1e9eacca4bbdf0d6273614a8d, type: 2}

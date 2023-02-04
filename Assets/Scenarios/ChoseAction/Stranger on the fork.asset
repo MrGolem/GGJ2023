@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d07dcd1c9641fa89b2c7d94cc2929c, type: 3}
+  m_Name: Stranger on the fork
+  m_EditorClassIdentifier: 
+  Title: Stranger on the fork
+  MainDescription: A stranger is standing at the fork, he must have seen you, as
+    if he was waiting. As you approach, he says, "Yes, yes, who's here with us."
+  Image: {fileID: 0}
+  ChooseVariants:
+  - {fileID: 11400000, guid: 0746f44345074174a9e7b22d4f1cc1b2, type: 2}
