@@ -53,8 +53,7 @@ public class Node : MonoBehaviour {
     _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
     InUse = true;
-    _spriteRenderer.DOColor(new Color(1f,0.5f,0.5f,1), 0.5f);
-    _spriteRenderer.transform.DOScale(Vector3.one * 0.2f, 0.7f).SetEase(Ease.OutSine);
+    _spriteRenderer.DOColor(new Color(1f,1,1,0.5f), 0.5f);
   }
 
   public int PositionNumber { get; set; }
