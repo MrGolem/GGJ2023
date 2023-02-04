@@ -1,10 +1,10 @@
 using DG.Tweening;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+
 public class PlayerMap : MonoBehaviour {
   [SerializeField]
   private Map _map;
+
 
   private void OnEnable() {
     Events.MoveOnMap.StartMove += MoveToNode;
