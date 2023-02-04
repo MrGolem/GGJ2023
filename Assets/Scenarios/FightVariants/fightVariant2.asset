@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93117f1557a34b4e8c092b218932f588, type: 3}
-  m_Name: fightBossVariant1
+  m_Name: fightVariant2
   m_EditorClassIdentifier: 
-  VariantName: Make your body fight
-  AfterChooseConfig: {fileID: 11400000, guid: f39acfa0e68aa45d69671570ba7114ff, type: 2}
+  VariantName: Now let's see who is stronger
+  _afterChooseConfig: {fileID: 11400000, guid: 83e95b16581b29c44b389fb38d20d295, type: 2}

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ac707aade7839a4dbc2e406e7ead43c, type: 3}
-  m_Name: Just move
+  m_Script: {fileID: 11500000, guid: 93117f1557a34b4e8c092b218932f588, type: 3}
+  m_Name: fightVariant3
   m_EditorClassIdentifier: 
-  VariantName: Lets just move
-  _afterChooseConfig: {fileID: 11400000, guid: 4b0a74b082eea194eb04dbb01e3ffbbe, type: 2}
+  VariantName: '"Hey you dumbass turn back and fight me"'
+  _afterChooseConfig: {fileID: 11400000, guid: 59d958e2c0a16ef49a494783bc649200, type: 2}

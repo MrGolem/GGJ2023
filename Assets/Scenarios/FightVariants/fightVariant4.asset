@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VariantName: You were waiting for me, which means you definitely don't want good.
     Your life will end here and now.
-  AfterChooseConfig: {fileID: 11400000, guid: f39acfa0e68aa45d69671570ba7114ff, type: 2}
+  _afterChooseConfig: {fileID: 11400000, guid: ffe9cf99f9678414cb0a10cfdf717bca, type: 2}

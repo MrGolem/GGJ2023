@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54a74fb5e2a045a489dab17d66aa012d, type: 3}
-  m_Name: fightAfterChoose
+  m_Name: JustMoveAfterChooose
   m_EditorClassIdentifier: 
-  VariantName: Attack!
-  Title: Enemy was angry
-  String: You angery the enemy and he go to attack pose. Apear
+  VariantName: Lets move
+  Title: Look around
+  String: You looked around ang prepare to leave this cave

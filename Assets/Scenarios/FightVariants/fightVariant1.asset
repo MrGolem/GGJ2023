@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: fightVariant1
   m_EditorClassIdentifier: 
   VariantName: Strike the pile in the middle with your sword
-  AfterChooseConfig: {fileID: 11400000, guid: f39acfa0e68aa45d69671570ba7114ff, type: 2}
+  _afterChooseConfig: {fileID: 11400000, guid: 865ff763530387a4e84deaa7c919496f, type: 2}

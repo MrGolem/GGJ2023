@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ac707aade7839a4dbc2e406e7ead43c, type: 3}
-  m_Name: Just move
+  m_Script: {fileID: 11500000, guid: 93117f1557a34b4e8c092b218932f588, type: 3}
+  m_Name: fightBossVariant1
   m_EditorClassIdentifier: 
-  VariantName: Lets just move
-  _afterChooseConfig: {fileID: 11400000, guid: 4b0a74b082eea194eb04dbb01e3ffbbe, type: 2}
+  VariantName: Make your body fight
+  _afterChooseConfig: {fileID: 11400000, guid: f39acfa0e68aa45d69671570ba7114ff, type: 2}
