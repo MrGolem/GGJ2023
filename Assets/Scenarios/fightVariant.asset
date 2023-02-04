@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VariantName: Go Fight
   AfterChooseConfig: {fileID: 11400000, guid: f39acfa0e68aa45d69671570ba7114ff, type: 2}
+  _item: {fileID: 11400000, guid: da336831368ce435e875f21a9271ec94, type: 2}
