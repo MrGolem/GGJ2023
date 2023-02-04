@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e045ecd70d497e8864fada3962cb5f, type: 3}
   m_Name: New Potion Item
   m_EditorClassIdentifier: 
-  Title: 
-  Description: 
-  Image: {fileID: 0}
-  HealCount: 0
+  Title: Heal Potion
+  Description: This hel potion extra class heal you for 20 hp
+  Image: {fileID: 21300000, guid: 02800fb9cff14da47a04572790384d8b, type: 3}
+  HealCount: 20

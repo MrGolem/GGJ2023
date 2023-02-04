@@ -25,7 +25,7 @@ public class Game : MonoBehaviour
 
    private void InitParams() {
       Dice = new Dice();
-      Player = new Player();
+      Player = new Player(null);
       _loopStateMachine = new LoopStateMachine();
    }
 

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VariantName: Pick potion
   AfterChooseConfig: {fileID: 11400000, guid: b9342d1d569274bdcb9093afff420105, type: 2}
+  _potionItem: {fileID: 11400000, guid: 2ed5a376f74fa452e9811b97fa383ffc, type: 2}
