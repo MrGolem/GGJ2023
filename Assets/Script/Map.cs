@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -19,16 +20,44 @@ public class Map : MonoBehaviour {
     }
 
     Events.MoveOnMap.EndMove += OpenChooseWindow;
+    Events.RollDiceEvent.WaitForRoll += OpenAllNextNodes;
+    OpenAllNextNodes();
   }
 
   private void OnDestroy() {
     Events.MoveOnMap.EndMove -= OpenChooseWindow;
+    Events.RollDiceEvent.WaitForRoll -= OpenAllNextNodes;
   }
 
-  public Node MapGetNextNode() { 
-    Node node = _nodes[_playerPosition].GetNextPoint();
+  public void OpenAllNextNodes() {
+    StartCoroutine(OpenCoroutine());
+  }
+
+  private IEnumerator OpenCoroutine() {
+    foreach (var node in _nodes[_playerPosition]._nextNodes) {
+      yield return new WaitForSeconds(0.3f);
+      if(node.InUse) continue;
+      node.Open();
+    }
+  }
+
+  public Node MapGetNextNode() {
+    var openedNodes = _nodes[_playerPosition]._nextNodes;
+
+    Node lastNode = _nodes[_playerPosition];
+    lastNode.Lock();
+    
+    Node node = lastNode.GetNextPoint();
+    
     _playerPosition = node.PositionNumber;
     Game.Player.Path.Add(_playerPosition);
+
+    openedNodes.Remove(node);
+
+    foreach (var openedNode in openedNodes) {
+      openedNode.Hide();
+    }
+    
     return node;
   }
 

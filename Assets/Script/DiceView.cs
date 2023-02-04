@@ -23,9 +23,20 @@ public class DiceView : MonoBehaviour {
 
     private void Awake() {
         _button.onClick.AddListener(OnButtonClicked);
+        Events.RollDiceEvent.WaitForRoll += OnRollWait;
+    }
+
+    private void OnDestroy() {
+        Events.RollDiceEvent.WaitForRoll -= OnRollWait;
+    }
+
+    private void OnRollWait() {
+        IsCanUse = true;
     }
 
     private void OnButtonClicked() {
+        if(!IsCanUse) return;
+        
         Events.StateControllerEvent.StartState(GameStateEnum.RollDice);
         IsCanUse = false;
 

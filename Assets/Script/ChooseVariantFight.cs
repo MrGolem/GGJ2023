@@ -6,5 +6,6 @@ public class ChooseVariantFight : ChooseVariant {
     Debug.Log("Here will be go to scene");
     Debug.Log("Можешь тут роботи перевірки на кубік щоб перевірити якесь своє значення ( наприклад скіп)" + Game.Dice.CurrentDiceCount);
     Events.Choose.CloseChooseWindow?.Invoke();
+    Events.RollDiceEvent.WaitForRoll?.Invoke();
   }
 }

@@ -5,6 +5,7 @@ public class Events {
   }
    
   public class RollDiceEvent {
+    public static Action WaitForRoll;
     public static Action RollDice;
   }
 
