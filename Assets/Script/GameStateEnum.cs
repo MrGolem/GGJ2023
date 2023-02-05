@@ -2,5 +2,9 @@ public enum GameStateEnum {
   Wait,
   RollDice,
   WalKOnMap,
-  Choose
+  Choose,
+  FightWait,
+  PlayerTeamAttack,
+  AssistantAttack,
+  EnemyTeamAttack
 }

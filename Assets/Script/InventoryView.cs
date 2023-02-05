@@ -42,6 +42,10 @@ public class InventoryView : MonoBehaviour {
       _usableItems[index].Init(actionItem);
     }
     
+    _weaponItem.Clear();
+    _armorItem.Clear();
+    assistantItem.Clear();
+    
     _weaponItem.Init(Game.Player.Inventory.WeaponItem);
     _armorItem.Init(Game.Player.Inventory.ArmorItem);
     assistantItem.Init(Game.Player.Inventory.AssistentItem); 

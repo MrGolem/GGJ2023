@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93117f1557a34b4e8c092b218932f588, type: 3}
-  m_Name: fightVariant4
+  m_Name: fightVariant 1
   m_EditorClassIdentifier: 
-  VariantName: You were waiting for me, which means you definitely don't want good.
-    Your life will end here and now.
-  _afterChooseConfig: {fileID: 11400000, guid: ffe9cf99f9678414cb0a10cfdf717bca, type: 2}
+  VariantName: Wait for the host here and then kill him
+  _afterChooseConfig: {fileID: 11400000, guid: 20df259404e247340b1d740cd386d06a, type: 2}
   character: {fileID: 11400000, guid: 7c3b2f7b01541426faff00ded4a03f2e, type: 2}
