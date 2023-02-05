@@ -9,6 +9,18 @@ public class Events {
     public static Action RollDice;
   }
 
+  public class Fight {
+    public static Action<Character> StartFight;
+    
+    public static Action WaitForFightRoll;
+    public static Action PlayerTeamAttack;
+    public static Action EnemyTeamAttack;
+
+    public static Action UpdateStatsUI;
+    
+    public static Action<UnitType, int> DealDamage;
+  }
+
   public class MoveOnMap {
     public static Action StartMove;
     public static Action EndMove;

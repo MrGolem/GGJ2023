@@ -7,5 +7,7 @@ public class PotionItem : ActionItem {
   
   public override void Use() {
     Debug.Log("I Heal some hp");
+    Game.FightData._playerCharacter.ChangeHealthBy(HealCount);
+    Game.Player.Inventory.ActionItems.Remove(this);
   }
 }

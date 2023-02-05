@@ -49,8 +49,12 @@ public class DiceView : MonoBehaviour {
         
 
         moveSequence.OnComplete(() => {
-            Events.StateControllerEvent.StartState(GameStateEnum.WalKOnMap);
+            OnRollComplete();
         });
+    }
+
+    protected virtual void OnRollComplete() {
+        Events.StateControllerEvent.StartState(GameStateEnum.WalKOnMap);
     }
 }
 
