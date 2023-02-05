@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Stranger in shadow
   MainDescription: At the fork, you see an unfamiliar figure - standing with his
     back to you. You rarely meet anyone with good intentions in these dungeons.
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 21f8cc180ea007d438f0fe645b3f5612, type: 3}
   ChooseVariants:
   - {fileID: 11400000, guid: d52c4ce1dc8beb54aab9864624201e41, type: 2}
+  - {fileID: 11400000, guid: 27e15ad62fe8b304fa936c940dfaf7ce, type: 2}

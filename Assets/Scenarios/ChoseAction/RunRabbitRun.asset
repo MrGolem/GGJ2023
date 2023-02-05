@@ -16,6 +16,6 @@ MonoBehaviour:
   MainDescription: You move in a circle around each other with weapons in your hands,
     this monster is clearly not ordinary, it is stronger than the ones you have seen
     before, and it seems that this battle will be very difficult.
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: b9ae86acf35b1224bb3dfa34d09f845e, type: 3}
   ChooseVariants:
   - {fileID: 11400000, guid: 1ace0bafec6af8b40a00a1ceffa8a247, type: 2}

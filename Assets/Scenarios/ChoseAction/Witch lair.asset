@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Witch lair
   m_EditorClassIdentifier: 
   Title: Witch's Lair
-  MainDescription: You found yourself in a witch's lair, there are various potions,
-    animal remains, jars hanging everywhere. It seems that the witch has not been
-    home for a long time. So you can try to find something interesting here.
-  Image: {fileID: 21300000, guid: b0616f055c9d4524fb1ffd554aa66c3e, type: 3}
+  MainDescription: You came to witch's lair, there are various potions, animal remains,
+    jars hanging everywhere. It seems that the witch has not been home for a long
+    time. So you can try to find something interesting here.
+  Image: {fileID: 21300000, guid: 105d1db9a096fea47861c1778bd95a68, type: 3}
   ChooseVariants:
   - {fileID: 11400000, guid: 1d957e3921347484abdcc83cff3152ce, type: 2}
   - {fileID: 11400000, guid: c001dec9b643c41b28d69fd6cda7234d, type: 2}

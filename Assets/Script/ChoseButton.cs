@@ -5,7 +5,8 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 public class ChoseButton : MonoBehaviour {
   public Action OnButtonClickAction;
-  
+    public AudioSource buttonSound;
+
   [SerializeField]
   private Button _button;
   [SerializeField]
@@ -25,5 +26,6 @@ public class ChoseButton : MonoBehaviour {
 
   private void OnButtonClick() {
     OnButtonClickAction?.Invoke();
+        buttonSound.Play();
   }
 }

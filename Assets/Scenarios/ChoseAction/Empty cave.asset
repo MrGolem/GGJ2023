@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Empty cave
   MainDescription: Empty cave, you can just go further
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 49d29819a006ebf479e1622eccfab4a1, type: 3}
   ChooseVariants:
   - {fileID: 11400000, guid: 4d332cc1e9eacca4bbdf0d6273614a8d, type: 2}
+  - {fileID: 11400000, guid: 895ae6a8f731f784e92af595f16609a8, type: 2}

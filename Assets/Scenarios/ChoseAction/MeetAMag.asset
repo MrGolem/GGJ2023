@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d07dcd1c9641fa89b2c7d94cc2929c, type: 3}
+  m_Name: MeetAMag
+  m_EditorClassIdentifier: 
+  Title: Meeting with magic
+  MainDescription: You met a wizard and he was very nice to you and offered you 3
+    potions to choose from
+  Image: {fileID: 21300000, guid: 46d3ef3a104a0364199872950e14a334, type: 3}
+  ChooseVariants:
+  - {fileID: 11400000, guid: 1d957e3921347484abdcc83cff3152ce, type: 2}

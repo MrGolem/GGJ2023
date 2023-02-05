@@ -10,7 +10,8 @@ public class Node : MonoBehaviour {
   public List<Node> _nextNodes;
   [SerializeField]
   private NodeType _nodeType;
-  
+  public Sprite LockedNodeImg;
+
   private ParticleSystem _openParticle;
   private SpriteRenderer _spriteRenderer;
 
@@ -51,7 +52,7 @@ public class Node : MonoBehaviour {
 
   public void Lock() {   
     _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-
+    _spriteRenderer.sprite = LockedNodeImg;
     InUse = true;
     _spriteRenderer.DOColor(new Color(1f,1,1,0.5f), 0.5f);
   }

@@ -6,6 +6,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DiceView : MonoBehaviour {
+
+
     [SerializeField]
     private Button _button;
     [SerializeField]
@@ -51,6 +53,7 @@ public class DiceView : MonoBehaviour {
         moveSequence.OnComplete(() => {
             Events.StateControllerEvent.StartState(GameStateEnum.WalKOnMap);
         });
+
     }
 }
 

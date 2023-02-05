@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Stranger on the fork
   MainDescription: A stranger is standing at the fork, he must have seen you, as
     if he was waiting. As you approach, he says, "Yes, yes, who's here with us."
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 21f8cc180ea007d438f0fe645b3f5612, type: 3}
   ChooseVariants:
   - {fileID: 11400000, guid: 0746f44345074174a9e7b22d4f1cc1b2, type: 2}
+  - {fileID: 11400000, guid: 4fe9953bd60d0d84bae0394c021faa84, type: 2}

@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: Mushroom cave
   m_EditorClassIdentifier: 
   Title: Mushroom cave
-  MainDescription: When you reach the fork in the maze, you again enter a spacious
-    cave, in the middle of the cave you see the remains of knights, among which you
-    see good leather armor. On the other side lie the mage's remains and his bag
-    of potions. You take a step, step on a mushroom, and all over the floor mushrooms
-    burst and begin to release gas.
-  Image: {fileID: 21300000, guid: b0616f055c9d4524fb1ffd554aa66c3e, type: 3}
+  MainDescription: On a fork in the maze, you again enter a spacious cave. You take
+    a step, step on a mushroom, and all over the floor mushrooms burst and begin
+    to release gas.
+  Image: {fileID: 21300000, guid: 701351c82fc13124f8bdfd9d929aee2a, type: 3}
   ChooseVariants:
-  - {fileID: 11400000, guid: c001dec9b643c41b28d69fd6cda7234d, type: 2}
+  - {fileID: 11400000, guid: 6dbbfade619f5f445bf1f17f1cb6a5be, type: 2}
   - {fileID: 11400000, guid: 1d957e3921347484abdcc83cff3152ce, type: 2}
-  - {fileID: 11400000, guid: 4d332cc1e9eacca4bbdf0d6273614a8d, type: 2}
+  - {fileID: 11400000, guid: 9e7d2be7a3f98c64c87736f77dfef51e, type: 2}

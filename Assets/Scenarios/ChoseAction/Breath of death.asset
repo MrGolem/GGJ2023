@@ -16,6 +16,6 @@ MonoBehaviour:
   MainDescription: Death awaits you at the next crossroads. You can feel her breath.
     Your spirit is dying. And now you see her live. However, resistance builds up
     inside you, your brain says... "Fight"
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: b9ae86acf35b1224bb3dfa34d09f845e, type: 3}
   ChooseVariants:
   - {fileID: 11400000, guid: 7c4863bf7c65a1e4a89c0594c1618814, type: 2}

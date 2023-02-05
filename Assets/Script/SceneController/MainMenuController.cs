@@ -10,7 +10,7 @@ public class MainMenuController : MonoBehaviour
     public GameObject LeaderboardPanel, SettingsPanel, SavedGamesPanel, SpecialMessage, BestiaryPanel;// всі панельки відкриваються при натисненні на кнопці
 	
 	public TextMeshProUGUI SpecialMessageHeader;
-	
+    public AudioSource ClickSound;
 	
 	public GameObject[] mainMenuItems;
 	bool didSavesExist = false, save1 = false, save2 = false, save3 = false;
@@ -47,11 +47,13 @@ public class MainMenuController : MonoBehaviour
 		{
             mainMenuItems[i].SetActive(false);
 		}
+        ClickSound.Play();
     }
 
     public void OnClickContinue()
     {
-		SavedGamesPanel.SetActive(true);
+        ClickSound.Play();
+        SavedGamesPanel.SetActive(true);
 
         if(save1 == true)
         {
@@ -106,14 +108,15 @@ public class MainMenuController : MonoBehaviour
         //      }
 
         //Треба буде зробити систему збережень, а поки, просто гравець переходить на мапу місій
-
+        ClickSound.Play();
         SceneManager.LoadScene("TravelMap");
 
     }
 
     public void OnClickBesteary()
     {
-		BestiaryPanel.SetActive(true);
+        ClickSound.Play();
+        BestiaryPanel.SetActive(true);
 		for(int i = 0; i < mainMenuItems.Length; i++)
 		{
             mainMenuItems[i].SetActive(false);
@@ -122,7 +125,8 @@ public class MainMenuController : MonoBehaviour
 	
 	public void OnClickExitFomPanel()
 	{
-		LeaderboardPanel.SetActive(false);
+        ClickSound.Play();
+        LeaderboardPanel.SetActive(false);
         SettingsPanel.SetActive(false);
         SavedGamesPanel.SetActive(false);
         SpecialMessage.SetActive(false);
@@ -137,7 +141,7 @@ public class MainMenuController : MonoBehaviour
     public void OnClickExit()
     {
         //SpecialMessage.SetActive(true);
-
+        ClickSound.Play();
         Application.Quit();
     }
 

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: fightVariant
   m_EditorClassIdentifier: 
   VariantName: Wait for the host here and then kill him
-  _afterChooseConfig: {fileID: 11400000, guid: 20df259404e247340b1d740cd386d06a, type: 2}
+  _afterChooseConfig: {fileID: 11400000, guid: 865ff763530387a4e84deaa7c919496f, type: 2}
+  _item: {fileID: 0}
