@@ -107,13 +107,13 @@ TextureImporter:
       name: Untitled24_20230204161645_0
       rect:
         serializedVersion: 2
-        x: 92
-        y: 182
-        width: 1291
-        height: 139
+        x: 0
+        y: 0
+        width: 550
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 21, z: 0, w: 19}
       outline: []
       physicsShape: []
       tessellationDetail: 0

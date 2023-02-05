@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9c30e6cdf1c4fe88bda9675c2dc8c0f, type: 3}
-  m_Name: New Choose Variant Assistant
+  m_Name: AssistantVariant
   m_EditorClassIdentifier: 
   VariantName: Get assistent
-  _afterChooseConfig: {fileID: 11400000, guid: 4b0a74b082eea194eb04dbb01e3ffbbe, type: 2}
+  _afterChooseConfig: {fileID: 11400000, guid: 535f4475d469a4d8dbfbc862a4ed42df, type: 2}
   _assistent: {fileID: 11400000, guid: 21ac2a7d3f8864775ae270e6e0f305c3, type: 2}

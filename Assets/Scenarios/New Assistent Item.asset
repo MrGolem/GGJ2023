@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad30204d1cd4e3380dcdac07c97432d, type: 3}
   m_Name: New Assistent Item
   m_EditorClassIdentifier: 
-  Title: 123
-  Description: 123
+  Title: Flower
+  Description: Your friend and assistant. Deal 6-8 damage
   Image: {fileID: -2413806693520163455, guid: 4615b9397d5c54d52b72180579e6d8db, type: 3}
   StatsConfig: {fileID: 11400000, guid: 7c3b2f7b01541426faff00ded4a03f2e, type: 2}

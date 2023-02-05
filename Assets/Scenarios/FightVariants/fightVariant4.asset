@@ -15,4 +15,7 @@ MonoBehaviour:
   VariantName: You were waiting for me, which means you definitely don't want good.
     Your life will end here and now.
   _afterChooseConfig: {fileID: 11400000, guid: ffe9cf99f9678414cb0a10cfdf717bca, type: 2}
-  character: {fileID: 11400000, guid: 7c3b2f7b01541426faff00ded4a03f2e, type: 2}
+  characters:
+  - {fileID: 11400000, guid: 62fcb56d185c34b759f7fabe7325223b, type: 2}
+  - {fileID: 11400000, guid: 26d056cb543934ae49c29103b1ea9ba5, type: 2}
+  - {fileID: 11400000, guid: 2ebea64e572da4f15987d6a787f28984, type: 2}

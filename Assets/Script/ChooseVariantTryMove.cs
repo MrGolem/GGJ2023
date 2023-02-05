@@ -9,6 +9,10 @@ public class ChooseVariantTryMove : ChooseVariant
     [SerializeField]
     private AfterChoose _aditionalAfterChoose;
 
+    
+    [SerializeField]
+    private CharacterStatsConfig character;
+    
     private bool isEscaped;
 
     public override AfterChoose AfterChooseConfig { get {
@@ -16,7 +20,7 @@ public class ChooseVariantTryMove : ChooseVariant
             if (isEscaped)
             {
                 return _afterChooseConfig;
-            }//Втеча успішна
+            }//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
             else
             {
                 return _aditionalAfterChoose;
@@ -29,10 +33,10 @@ public class ChooseVariantTryMove : ChooseVariant
         if (isEscaped)
         {
             Events.Choose.CloseChooseWindow?.Invoke();
-        }//Втеча успішна
+        }//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         else
         {
-            Debug.Log("Attacked");
+            Events.Fight.StartFight(new Character(character));
             Events.Choose.CloseChooseWindow?.Invoke();
         }
         Events.MoveOnMap.StartMove();

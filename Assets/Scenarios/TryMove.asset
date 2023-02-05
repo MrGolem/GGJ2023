@@ -15,3 +15,4 @@ MonoBehaviour:
   VariantName: Try escape
   _afterChooseConfig: {fileID: 11400000, guid: b691a234eb1a9a7478158d4d28631b79, type: 2}
   _aditionalAfterChoose: {fileID: 11400000, guid: 1a83ca73bce9d474ea33380911a89839, type: 2}
+  character: {fileID: 11400000, guid: 80b440bde8557425eb9a825fa5f0a360, type: 2}

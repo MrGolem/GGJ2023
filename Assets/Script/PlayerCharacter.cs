@@ -10,8 +10,6 @@ public class PlayerCharacter : Character {
 
   public override (int, int) Damage {
     get {
-      //Events.Fight.UpdateStatsUI?.Invoke();
-      
       if( Game.Player.Inventory.WeaponItem != null)
       return ((int)_characterStatsConfig.Damage.x + Game.Player.Inventory.WeaponItem.Damage.Item1, (int)_characterStatsConfig.Damage.y +  Game.Player.Inventory.WeaponItem.Damage.Item2);
       

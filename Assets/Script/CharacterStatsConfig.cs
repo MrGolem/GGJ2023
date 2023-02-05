@@ -6,4 +6,5 @@ public class CharacterStatsConfig : ScriptableObject {
   public int Armor;
   public Vector2 Damage;
   public Sprite Image;
+  public Sprite Icon;
 }

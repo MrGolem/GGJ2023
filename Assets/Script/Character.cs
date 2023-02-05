@@ -17,7 +17,9 @@ public class Character {
     => ((int)_characterStatsConfig.Damage.x, (int)_characterStatsConfig.Damage.y);
 
   public void ChangeHealthBy (int value) {
-    CurrentHealth = Mathf.Clamp(CurrentHealth + value, 0, MaxHealth);
+    var modifiedDamage = Mathf.Clamp(value + Armor, -200, 0);
+    
+    CurrentHealth = Mathf.Clamp(CurrentHealth + modifiedDamage, 0, MaxHealth);
     Events.Fight.UpdateStatsUI?.Invoke();
   }
 

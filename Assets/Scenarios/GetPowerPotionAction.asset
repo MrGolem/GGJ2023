@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa49b15f6b00487ba41df8c0b18a35cb, type: 3}
   m_Name: GetPowerPotionAction
   m_EditorClassIdentifier: 
-  VariantName: 
-  _afterChooseConfig: {fileID: 0}
+  VariantName: Get power potion
+  _afterChooseConfig: {fileID: 11400000, guid: b9342d1d569274bdcb9093afff420105, type: 2}
   _potionItem: {fileID: 0}

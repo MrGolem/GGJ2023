@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VariantName: '"Hey you dumbass turn back and fight me"'
   _afterChooseConfig: {fileID: 11400000, guid: 59d958e2c0a16ef49a494783bc649200, type: 2}
+  characters:
+  - {fileID: 11400000, guid: 725b8a687851342dca72d877589a5cf6, type: 2}
+  - {fileID: 11400000, guid: 62fcb56d185c34b759f7fabe7325223b, type: 2}
+  - {fileID: 11400000, guid: 2ebea64e572da4f15987d6a787f28984, type: 2}
+  - {fileID: 11400000, guid: 26d056cb543934ae49c29103b1ea9ba5, type: 2}

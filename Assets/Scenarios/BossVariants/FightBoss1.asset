@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a9390cbb8d4cac87e017d0ddf91758, type: 3}
+  m_Name: FightBoss1
+  m_EditorClassIdentifier: 
+  VariantName: Make your body fight
+  _afterChooseConfig: {fileID: 11400000, guid: f39acfa0e68aa45d69671570ba7114ff, type: 2}
+  _bosses:
+  - {fileID: 11400000, guid: 9efbcdb1104d54a30a7dab6089df8644, type: 2}
+  - {fileID: 11400000, guid: f55fb147240bc47a5b5138671f2663b2, type: 2}
+  - {fileID: 11400000, guid: d043f8bfbf13c40268828af5fc7c0932, type: 2}

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eaceb363bcd43648505315704c38c8a, type: 3}
   m_Name: New Character Stats Config
   m_EditorClassIdentifier: 
-  Health: 10
-  Armor: 1
-  Damage: {x: 3, y: 5}
+  Health: 200
+  Armor: 2
+  Damage: {x: 8, y: 16}
   Image: {fileID: 21300000, guid: 89815975a8269514f8976f055b008399, type: 3}
+  Icon: {fileID: 21300000, guid: c6e2f18f621fa1e4696ad8616d9c92a5, type: 3}

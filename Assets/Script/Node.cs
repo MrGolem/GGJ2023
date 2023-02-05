@@ -9,6 +9,9 @@ public class Node : MonoBehaviour {
   [SerializeField]
   public List<Node> _nextNodes;
   [SerializeField]
+  private Image _image;
+  
+  [SerializeField]
   private NodeType _nodeType;
   public Sprite LockedNodeImg;
 
@@ -18,8 +21,31 @@ public class Node : MonoBehaviour {
   public bool InUse;
   private Tween _fadeTween;
   
+  [SerializeField]
+  private Sprite _finalSoprite;
+  [SerializeField]
+  private Sprite _normal;
+  [SerializeField]
+  private Sprite _boss;
+  
 
   public void Open() {
+    switch (_nodeType) {
+
+      case NodeType.Normal:
+        _image.sprite = _normal;
+        break;
+      case NodeType.Boss:
+        _image.sprite = _boss;
+        break;
+      case NodeType.Final:
+        _image.sprite = _finalSoprite;
+        _image.color = new Color(1, 1, 1, 1);
+        break;
+      default:
+        throw new ArgumentOutOfRangeException();
+    }
+    
     _openParticle = GetComponentInChildren<ParticleSystem>();
     _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     _fadeTween?.Kill();
@@ -62,5 +88,5 @@ public class Node : MonoBehaviour {
 }
 
 public enum NodeType {
-  Normal, Boss
+  Normal, Boss, Final
 }

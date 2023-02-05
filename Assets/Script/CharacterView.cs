@@ -1,5 +1,6 @@
 using System;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -10,7 +11,7 @@ public class CharacterView : MonoBehaviour {
   private Image _highLight;
   [SerializeField]
   private UnitType _unitType;
-
+  
   public Action OnAttackComplete;
 
   private Sequence _dealDamage;
@@ -38,6 +39,10 @@ public class CharacterView : MonoBehaviour {
 
     _dealDamage.AppendInterval(0.5f);
     _dealDamage.OnKill(() => OnAttackComplete?.Invoke());
+  }
+
+  public void Dead() {
+    _image.DOFade(0f, 0.5f);
   }
 
   public void GetDamage(int damage) {

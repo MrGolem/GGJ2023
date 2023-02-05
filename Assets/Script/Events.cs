@@ -16,6 +16,12 @@ public class Events {
     public static Action PlayerTeamAttack;
     public static Action EnemyTeamAttack;
 
+    public static Action OpenWinMenu;
+    public static Action CloseWinMenu;
+    
+    public static Action OpenLoseMenu;
+    public static Action CloseLoseMenu;
+
     public static Action UpdateStatsUI;
     
     public static Action<UnitType, int> DealDamage;

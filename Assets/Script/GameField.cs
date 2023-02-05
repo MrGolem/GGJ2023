@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -46,7 +47,11 @@ public class GameField : MonoBehaviour {
 
   private void PlayerTeamAttack() {
     if (Game.FightData._playerCharacter.CurrentHealth <= 0) {
-      SceneManager.LoadSceneAsync("TravelMap");
+      Player.Dead();
+      var sequence = DOTween.Sequence();
+      sequence.AppendInterval(0.75f);
+      sequence.OnKill(() => Events.Fight.OpenLoseMenu?.Invoke());
+      return;
     }
 
       Player.OnAttackComplete = () => {
@@ -65,7 +70,10 @@ public class GameField : MonoBehaviour {
 
   private void EnemyTeamAttack() {
     if (Game.FightData._enemyCharacter.CurrentHealth <= 0) {
-      SceneManager.LoadSceneAsync("TravelMap");
+      Enemy.Dead();
+      var sequence = DOTween.Sequence();
+      sequence.AppendInterval(0.75f);
+      sequence.OnKill(() => Events.Fight.OpenWinMenu?.Invoke());
     }
     
     Enemy.OnAttackComplete = () => {
