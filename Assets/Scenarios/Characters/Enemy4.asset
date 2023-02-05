@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eaceb363bcd43648505315704c38c8a, type: 3}
   m_Name: Enemy4
   m_EditorClassIdentifier: 
-  Health: 70
+  Health: 40
   Armor: 2
   Damage: {x: 4, y: 9}
   Image: {fileID: 21300000, guid: 327bc13f4540c984bac60cf223623dc4, type: 3}

@@ -15,4 +15,4 @@ MonoBehaviour:
   Title: Heal Potion
   Description: This heal potion extra class heal you for 20 hp
   Image: {fileID: 21300000, guid: 8d23ec9303dff764dbee0507d2e02cdc, type: 3}
-  HealStats: 100
+  HealStats: 30

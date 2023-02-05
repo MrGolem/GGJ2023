@@ -34,7 +34,7 @@ public class CharacterView : MonoBehaviour {
 
     _dealDamage.Append(_image.transform.DOShakePosition(0.5f, 5f));
     _dealDamage.AppendCallback(() => {
-      Events.Fight.DealDamage?.Invoke(_unitType,  (int) Mathf.Lerp(1, 6, (_unitType == UnitType.Player ? Game.Dice.CurrentDiceCount : Random.Range(1, 6)) / 6f));
+      Events.Fight.DealDamage?.Invoke(_unitType,  (int) Mathf.Lerp(_characterStatsConfig.Damage.Item1, _characterStatsConfig.Damage.Item2, (_unitType == UnitType.Player ? Game.Dice.CurrentDiceCount : Random.Range(1, 6)) / 6f));
     });
 
     _dealDamage.AppendInterval(0.5f);

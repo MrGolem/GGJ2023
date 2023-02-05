@@ -64,6 +64,7 @@ public class Map : MonoBehaviour {
   }
 
   private void OpenChooseWindow() {
+    Debug.Log("PLayer pos " + _playerPosition);
     var nodeType = _nodes[_playerPosition].NodeType;
 
     switch (nodeType) {
