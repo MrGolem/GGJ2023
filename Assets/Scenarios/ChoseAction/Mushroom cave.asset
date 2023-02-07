@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d07dcd1c9641fa89b2c7d94cc2929c, type: 3}
+  m_Name: Mushroom cave
+  m_EditorClassIdentifier: 
+  Title: Mushroom cave
+  MainDescription: On a fork in the maze, you again enter a spacious cave. You take
+    a step, step on a mushroom, and all over the floor mushrooms burst and begin
+    to release gas.
+  Image: {fileID: 21300000, guid: 701351c82fc13124f8bdfd9d929aee2a, type: 3}
+  ChooseVariants:
+  - {fileID: 11400000, guid: 6dbbfade619f5f445bf1f17f1cb6a5be, type: 2}
+  - {fileID: 11400000, guid: 1d957e3921347484abdcc83cff3152ce, type: 2}
+  - {fileID: 11400000, guid: 9e7d2be7a3f98c64c87736f77dfef51e, type: 2}

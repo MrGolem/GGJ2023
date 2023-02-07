@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: ed1865d02b89a7243855880c2f16b5f1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Laila
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3bbd2c343f0cabf40af57bd439d88c86, type: 3}
+  - {fileID: 12800000, guid: 1cc40d61b5b251b458572c4e11a2b51a, type: 3}
+  - {fileID: 12800000, guid: 09201dc37c83bb947abde10d0dcf77bd, type: 3}
+  - {fileID: 12800000, guid: 336f2499d3e0adf42960f2c797b591f5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
