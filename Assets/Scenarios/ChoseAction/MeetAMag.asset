@@ -18,3 +18,4 @@ MonoBehaviour:
   Image: {fileID: 21300000, guid: 46d3ef3a104a0364199872950e14a334, type: 3}
   ChooseVariants:
   - {fileID: 11400000, guid: 1d957e3921347484abdcc83cff3152ce, type: 2}
+  - {fileID: 11400000, guid: 1c9434efafac34d7cbc9a9c9ebcc4146, type: 2}

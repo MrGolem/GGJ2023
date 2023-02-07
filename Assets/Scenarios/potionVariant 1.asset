@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa49b15f6b00487ba41df8c0b18a35cb, type: 3}
+  m_Name: potionVariant 1
+  m_EditorClassIdentifier: 
+  VariantName: Pick potion
+  _afterChooseConfig: {fileID: 11400000, guid: b9342d1d569274bdcb9093afff420105, type: 2}
+  _potionItem: {fileID: 11400000, guid: 2ed5a376f74fa452e9811b97fa383ffc, type: 2}

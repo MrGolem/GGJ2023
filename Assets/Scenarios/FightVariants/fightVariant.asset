@@ -14,4 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VariantName: Wait for the host here and then kill him
   _afterChooseConfig: {fileID: 11400000, guid: 865ff763530387a4e84deaa7c919496f, type: 2}
-  _item: {fileID: 0}
+  characters:
+  - {fileID: 11400000, guid: 725b8a687851342dca72d877589a5cf6, type: 2}
+  - {fileID: 11400000, guid: 62fcb56d185c34b759f7fabe7325223b, type: 2}
+  - {fileID: 11400000, guid: 26d056cb543934ae49c29103b1ea9ba5, type: 2}
+  - {fileID: 11400000, guid: 2ebea64e572da4f15987d6a787f28984, type: 2}
+  - {fileID: 11400000, guid: ae8d180bae3b941d8972d3665d64695a, type: 2}

@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 1cd877059f1214945b5d29f9805321bc, type: 3}
   m_Name: Power potion
   m_EditorClassIdentifier: Assembly-CSharp::PowerPotionItem
-  Title: Power potion
-  Description: This potion can turn a weakling into the strongest warrior.
+  Title: Power Potion
+  Description: Give 5 strength for 3 turns
   Image: {fileID: 21300000, guid: 55d356d84e33b6d44a7d73ca6a3db6bb, type: 3}
-  powerX: 2
+  powerX: 5

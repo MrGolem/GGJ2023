@@ -1,14 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(menuName = "ChoseVaraiant/OpenFightScene")]
 public class ChooseVariantFight : ChooseVariant {
   [SerializeField]
-  private ArmorItem _item;
+  private List<CharacterStatsConfig> characters;
   
   public override void Use() {
-    Events.Inventory.AddItem(_item);
-    Debug.Log("Here will be go to scene");
-    Debug.Log("Можешь тут роботи перевірки на кубік щоб перевірити якесь своє значення ( наприклад скіп)" + Game.Dice.CurrentDiceCount);
+    var character = characters[Random.Range(0, characters.Count)];
+    
+    Events.Fight.StartFight(new Character(character));
     Events.Choose.CloseChooseWindow?.Invoke();
-    Events.RollDiceEvent.WaitForRoll?.Invoke();
   }
 }

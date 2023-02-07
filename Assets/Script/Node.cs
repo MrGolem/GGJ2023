@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class Node : MonoBehaviour {
   [SerializeField]
   public List<Node> _nextNodes;
+
+  
   [SerializeField]
   private NodeType _nodeType;
   public Sprite LockedNodeImg;
@@ -18,6 +20,35 @@ public class Node : MonoBehaviour {
   public bool InUse;
   private Tween _fadeTween;
   
+  [SerializeField]
+  private Sprite _finalSoprite;
+  [SerializeField]
+  private Sprite _normal;
+  [SerializeField]
+  private Sprite _boss;
+
+  private void Awake() {
+    
+    var _image = GetComponent<SpriteRenderer>();
+
+    switch (_nodeType) {
+
+      case NodeType.Normal:
+        _image.sprite = _normal;
+        break;
+      case NodeType.Boss:
+        _image.sprite = _boss;
+        break;
+      case NodeType.Final:
+        _image.sprite = _finalSoprite;
+        _image.color = new Color(1, 1, 1, 1);
+        break;
+      default:
+        _image.sprite = _normal;
+        break;
+    }
+  }
+
 
   public void Open() {
     _openParticle = GetComponentInChildren<ParticleSystem>();
@@ -58,9 +89,9 @@ public class Node : MonoBehaviour {
   }
 
   public int PositionNumber { get; set; }
-  public NodeType NodeType { get; set; }
+  public NodeType NodeType => _nodeType;
 }
 
 public enum NodeType {
-  Normal, Boss
+  Normal, Boss, Final
 }

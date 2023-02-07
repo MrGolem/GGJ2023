@@ -26,6 +26,7 @@ public class ChoseButton : MonoBehaviour {
 
   private void OnButtonClick() {
     OnButtonClickAction?.Invoke();
-        buttonSound.Play();
+    if(buttonSound != null)
+      buttonSound.Play();
   }
 }

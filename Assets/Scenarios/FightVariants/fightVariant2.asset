@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VariantName: Now let's see who is stronger
   _afterChooseConfig: {fileID: 11400000, guid: 83e95b16581b29c44b389fb38d20d295, type: 2}
+  characters:
+  - {fileID: 11400000, guid: 80b440bde8557425eb9a825fa5f0a360, type: 2}

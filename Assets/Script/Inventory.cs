@@ -12,7 +12,7 @@ public class Inventory {
   }
 
   private void AddItem (Item item) {
-    Debug.Log("aaa" + item);
+    Events.Fight.UpdateStatsUI?.Invoke();
     
     if (item is ActionItem actionItem) {
       if (ActionItems.Count < 3) {
@@ -36,13 +36,16 @@ public class Inventory {
 
     }
 
-    if (AssistentItem is AssistentItem assistentItem) {
+    if (item is AssistentItem assistentItem) {
+      Game.FightData._assistantCharacter = new Character(assistentItem.StatsConfig);
       AssistentItem = assistentItem;
       return;
     }
   }
 
   private void RemoveItem (Item item) {
+    Events.Fight.UpdateStatsUI?.Invoke();
+
     if (item is ActionItem actionItem) {
       ActionItems.Remove(actionItem);
       return;

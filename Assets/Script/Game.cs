@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
@@ -13,23 +15,56 @@ public class Game : MonoBehaviour
 
    public static Player Player;
 
+   public static FightData FightData;
+
    private LoopStateMachine _loopStateMachine;
+
+   private static Game Instance;
 
    [SerializeField]
    private PlayerMap _playerOnMap;
+   [SerializeField]
+   private CharacterStatsConfig _characterStatsConfig;
 
    private void Awake() {
+      if (Instance == null) {
+         Instance = this;
+         DontDestroyOnLoad(gameObject);
+      } else {
+         Destroy(gameObject);
+         return;
+      }
+      
       InitParams();
       InitGame();
+
+      Events.Fight.StartFight += StartFight;
+   }
+
+   private void OnDestroy() {
+      Events.Fight.StartFight -= StartFight;
+   }
+
+   private void StartFight (Character character) {
+      FightData._enemyCharacter = character;
+      SceneManager.LoadSceneAsync("BattleScene");
    }
 
    private void InitParams() {
       Dice = new Dice();
-      Player = new Player(null);
+      Player = new Player(_characterStatsConfig);
+      FightData = new FightData();
+      FightData._playerCharacter = Player.CharacterStats;
+
       _loopStateMachine = new LoopStateMachine();
    }
 
    private void InitGame() {
       Events.StateControllerEvent.StartState?.Invoke(GameStateEnum.Wait);
    }
+}
+public class FightData {
+   public Character _enemyCharacter;
+   public Character _playerCharacter;
+   public Character _assistantCharacter;
 }
