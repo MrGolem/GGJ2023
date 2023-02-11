@@ -6,7 +6,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DiceView : MonoBehaviour {
-
+//звуки кубика
+    [SerializeField]
+    private AudioSource audioSourceForDice;
+    private AudioClip lastDiceAudioClip;
+    [SerializeField]
+    private AudioClip[] audioClipArrayForDice;
+    //кінець звуків кубика
 
     [SerializeField]
     private Button _button;
@@ -38,7 +44,15 @@ public class DiceView : MonoBehaviour {
 
     private void OnButtonClicked() {
         if(!IsCanUse) return;
-        
+
+        while (audioSourceForDice.clip == lastDiceAudioClip)
+        {
+            audioSourceForDice.clip = audioClipArrayForDice[UnityEngine.Random.Range(0, audioClipArrayForDice.Length)];
+        }
+        lastDiceAudioClip = audioSourceForDice.clip;
+        audioSourceForDice.Play();
+
+
         Events.StateControllerEvent.StartState(GameStateEnum.RollDice);
         IsCanUse = false;
 

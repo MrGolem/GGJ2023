@@ -14,10 +14,11 @@ public class GameField : MonoBehaviour {
   private CharacterView Enemy;
   [SerializeField]
   private CharacterView Assistant;
-  
-  
 
-  public void Awake() {
+
+
+
+    public void Awake() {
     Events.Fight.DealDamage += DealDamage;
     Init();
 
@@ -92,7 +93,7 @@ public class GameField : MonoBehaviour {
   }
 
   public void DealDamage (UnitType unitType, int damage) {
-    switch(unitType) {
+    switch (unitType) {
       case UnitType.Player:
         Enemy.GetDamage(damage);
         break;

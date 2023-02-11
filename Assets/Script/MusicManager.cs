@@ -9,7 +9,7 @@ public class MusicManager : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
 
         if(musicManagerInstance == null)
         {

@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 public class CharacterView : MonoBehaviour {
+    [SerializeField]
+    private DamageMessageSpawner damageMessageSpawner;
   [SerializeField]
   private Image _image;
   [SerializeField]
@@ -18,7 +20,14 @@ public class CharacterView : MonoBehaviour {
   private Sequence _HighlightDamage;
   public Character _characterStatsConfig;
 
-  public void SetCharacter(Character character) {
+    //Sound
+    [SerializeField]
+    private AudioSource attackAudioSource;
+    private AudioClip attackLastAudioClip;
+    [SerializeField]
+    private AudioClip[] attackAudioClipArray;
+
+    public void SetCharacter(Character character) {
     gameObject.SetActive(true);
     _characterStatsConfig = character;
     _image.sprite = character._characterStatsConfig.Image;
@@ -29,7 +38,14 @@ public class CharacterView : MonoBehaviour {
   }
 
   public void DealDamage() {
-    _dealDamage?.Kill();
+        while (attackAudioSource.clip == attackLastAudioClip)
+        {
+            attackAudioSource.clip = attackAudioClipArray[UnityEngine.Random.Range(0, attackAudioClipArray.Length)];
+        }
+        attackLastAudioClip = attackAudioSource.clip;
+        attackAudioSource.Play();
+
+        _dealDamage?.Kill();
     _dealDamage = DOTween.Sequence();
 
     _dealDamage.Append(_image.transform.DOShakePosition(0.5f, 5f));
@@ -46,7 +62,10 @@ public class CharacterView : MonoBehaviour {
   }
 
   public void GetDamage(int damage) {
+
+    damageMessageSpawner.SpawnMessage(damage.ToString());
     
+
     _HighlightDamage?.Kill();
     _HighlightDamage = DOTween.Sequence();
 
