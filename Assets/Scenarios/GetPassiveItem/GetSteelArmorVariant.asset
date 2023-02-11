@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82a8d699cda28646aa859e94706f1f7, type: 3}
   m_Name: GetSteelArmorVariant
   m_EditorClassIdentifier: 
-  VariantName: Pick up that perfect armor
-  _afterChooseConfig: {fileID: 11400000, guid: 89228bc88ae46a34093fde102bc6df7b, type: 2}
+  VariantName: Pick up that perfect steel armor and run
+  _afterChooseConfig: {fileID: 11400000, guid: 9641d15c778bc614fbc30df79c94410c, type: 2}
   _armorItem: {fileID: 11400000, guid: a3f89a6c8ac88764f997013ce6e809ad, type: 2}

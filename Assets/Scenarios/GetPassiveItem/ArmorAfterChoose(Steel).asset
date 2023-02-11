@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54a74fb5e2a045a489dab17d66aa012d, type: 3}
-  m_Name: JustMoveAfterChooose
+  m_Name: ArmorAfterChoose(Steel)
   m_EditorClassIdentifier: 
-  VariantName: Lets move
-  Title: Look around
-  String: You looked around ang prepare to leave this cave
+  VariantName: Wear steel armor
+  Title: New protective shell
+  String: Wow, I have new armor, She will easily protect me from the teeth and claws
+    of cave dwellers.

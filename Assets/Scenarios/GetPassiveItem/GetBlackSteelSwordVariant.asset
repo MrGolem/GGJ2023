@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1be1244ba6b46469be4330eb9329c4, type: 3}
   m_Name: GetBlackSteelSwordVariant
   m_EditorClassIdentifier: 
-  VariantName: To snatch the sword from the hands of the dead prince
+  VariantName: Wrest the sword from the hands of the dead prince
   _afterChooseConfig: {fileID: 11400000, guid: 1dc29622efe8cac439519a8a09a36dbf, type: 2}
   _weaponItem: {fileID: 11400000, guid: a06b410929030e645899792e2d554b6a, type: 2}

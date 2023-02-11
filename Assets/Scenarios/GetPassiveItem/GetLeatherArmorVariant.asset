@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82a8d699cda28646aa859e94706f1f7, type: 3}
   m_Name: GetLeatherArmorVariant
   m_EditorClassIdentifier: 
-  VariantName: Pick up armor from a floor
+  VariantName: To look for something worthy among a pile of things
   _afterChooseConfig: {fileID: 11400000, guid: 89228bc88ae46a34093fde102bc6df7b, type: 2}
   _armorItem: {fileID: 11400000, guid: da336831368ce435e875f21a9271ec94, type: 2}

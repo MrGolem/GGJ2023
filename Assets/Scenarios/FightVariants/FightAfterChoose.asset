@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a74fb5e2a045a489dab17d66aa012d, type: 3}
   m_Name: FightAfterChoose
   m_EditorClassIdentifier: 
-  VariantName: Oops, i have to fight
+  VariantName: Oops, it was bad idea
   Title: A big big monster
   String: Looks like i shouldn`t put my sword in every place.

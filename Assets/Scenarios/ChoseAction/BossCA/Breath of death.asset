@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Breathe of death
   MainDescription: Death awaits you at the next crossroads. You can feel her breath.
     Your spirit is dying. And now you see her live. However, resistance builds up
-    inside you, your brain says... "Fight"
+    inside you, your brain says...
   Image: {fileID: 21300000, guid: b9ae86acf35b1224bb3dfa34d09f845e, type: 3}
   ChooseVariants:
   - {fileID: 11400000, guid: 3734c7ec7793348b4a1efc14e5a82d99, type: 2}

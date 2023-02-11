@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9c30e6cdf1c4fe88bda9675c2dc8c0f, type: 3}
-  m_Name: AssistantVariant
+  m_Name: AssistantVariant 1
   m_EditorClassIdentifier: 
-  VariantName: Get poison flower
-  _afterChooseConfig: {fileID: 11400000, guid: 49d1aa256a64b6a4a926ae832af261bb, type: 2}
-  _assistent: {fileID: 11400000, guid: 21ac2a7d3f8864775ae270e6e0f305c3, type: 2}
+  VariantName: Get yellow flower
+  _afterChooseConfig: {fileID: 11400000, guid: 535f4475d469a4d8dbfbc862a4ed42df, type: 2}
+  _assistent: {fileID: 11400000, guid: c119e407f679c9e48b8aca78befa350e, type: 2}

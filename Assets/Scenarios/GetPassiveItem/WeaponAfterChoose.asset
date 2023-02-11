@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: WeaponAfterChoose
   m_EditorClassIdentifier: 
   VariantName: Lets test this new blade in a battle
-  Title: New weapon
+  Title: Steel sword
   String: Wow, i got a nice new weapon, i will kill alot monsters with it.

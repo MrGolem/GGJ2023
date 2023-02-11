@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d07dcd1c9641fa89b2c7d94cc2929c, type: 3}
   m_Name: EnemyWithNoChoisesNotToFight
   m_EditorClassIdentifier: 
-  Title: He definetly want kill you
+  Title: This traveler definitely wants to kill you
   MainDescription: Oops, you are unlucky, a monster has crossed your path and he
     is serious, the battle cannot be avoided
   Image: {fileID: 21300000, guid: a9d9d9696e6c19d4ab3f0968da4d7d02, type: 3}

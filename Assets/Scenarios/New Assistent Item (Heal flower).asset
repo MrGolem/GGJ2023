@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eaceb363bcd43648505315704c38c8a, type: 3}
-  m_Name: New Character Stats Config 1
+  m_Script: {fileID: 11500000, guid: 6ad30204d1cd4e3380dcdac07c97432d, type: 3}
+  m_Name: New Assistent Item (Heal flower)
   m_EditorClassIdentifier: 
-  Health: 100
-  Armor: 0
-  Damage: {x: 6, y: 8}
+  Title: Healing flower
+  Description: Your friend and assistant. Restore 2-8 healtpoints.
   Image: {fileID: 21300000, guid: 08ffd646d64ffdf47878391d2eedd54a, type: 3}
-  Icon: {fileID: 21300000, guid: 08ffd646d64ffdf47878391d2eedd54a, type: 3}
+  StatsConfig: {fileID: 11400000, guid: 5f55ea38d51b37c44891be09b23a00f3, type: 2}

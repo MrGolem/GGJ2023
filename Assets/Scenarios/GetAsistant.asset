@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a74fb5e2a045a489dab17d66aa012d, type: 3}
   m_Name: GetAsistant
   m_EditorClassIdentifier: 
-  VariantName: Finally
-  Title: You got an assistant
+  VariantName: Lets continue our travel
+  Title: Take a new little helper
   String: The flower looks on you and ssems be happy

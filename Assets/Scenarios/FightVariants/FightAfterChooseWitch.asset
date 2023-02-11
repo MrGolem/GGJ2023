@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54a74fb5e2a045a489dab17d66aa012d, type: 3}
-  m_Name: TryMoveAfterChoice1
+  m_Name: FightAfterChooseWitch
   m_EditorClassIdentifier: 
-  VariantName: Fight back
-  Title: Ooops
-  String: You failed to escape, now enemy attack you
+  VariantName: '"Die!"'
+  Title: Mad wich
+  String: The witch really wants to burn you alive, she seems very unhappy.

@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ac707aade7839a4dbc2e406e7ead43c, type: 3}
-  m_Name: Just move
+  m_Script: {fileID: 11500000, guid: 54a74fb5e2a045a489dab17d66aa012d, type: 3}
+  m_Name: GetPosionAsistant
   m_EditorClassIdentifier: 
-  VariantName: Just move
-  _afterChooseConfig: {fileID: 11400000, guid: 4b0a74b082eea194eb04dbb01e3ffbbe, type: 2}
+  VariantName: Together we are unstoppable
+  Title: Poison helper
+  String: The flower wants to poison all enemies. It's good that she doesn't consider
+    you an enemy.

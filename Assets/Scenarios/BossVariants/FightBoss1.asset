@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a9390cbb8d4cac87e017d0ddf91758, type: 3}
   m_Name: FightBoss1
   m_EditorClassIdentifier: 
-  VariantName: Make your body fight
+  VariantName: '"Fight. You must win"'
   _afterChooseConfig: {fileID: 11400000, guid: f39acfa0e68aa45d69671570ba7114ff, type: 2}
   _bosses:
   - {fileID: 11400000, guid: 9efbcdb1104d54a30a7dab6089df8644, type: 2}

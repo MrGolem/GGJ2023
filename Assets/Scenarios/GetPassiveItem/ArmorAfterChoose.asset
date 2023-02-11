@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a74fb5e2a045a489dab17d66aa012d, type: 3}
   m_Name: ArmorAfterChoose
   m_EditorClassIdentifier: 
-  VariantName: Wear this new armor
-  Title: New armor
-  String: Wow, i have new armor, great i take it.
+  VariantName: Wear leather armor
+  Title: Found new armor
+  String: Wow, I have new armor, not perfect but better than nothing.

@@ -19,3 +19,4 @@ MonoBehaviour:
   ChooseVariants:
   - {fileID: 11400000, guid: 1d957e3921347484abdcc83cff3152ce, type: 2}
   - {fileID: 11400000, guid: 1c9434efafac34d7cbc9a9c9ebcc4146, type: 2}
+  - {fileID: 11400000, guid: 565aafb9cff40914381ad9eee079dbf6, type: 2}

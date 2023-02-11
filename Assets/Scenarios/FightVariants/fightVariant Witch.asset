@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: fightVariant Witch
   m_EditorClassIdentifier: 
   VariantName: Kill the witch
-  _afterChooseConfig: {fileID: 11400000, guid: 20df259404e247340b1d740cd386d06a, type: 2}
+  _afterChooseConfig: {fileID: 11400000, guid: ca12bca79d0e64f4a90b267051ace51b, type: 2}
   characters:
   - {fileID: 11400000, guid: 41962599503c84e5f89cbe7dbfb3e521, type: 2}
