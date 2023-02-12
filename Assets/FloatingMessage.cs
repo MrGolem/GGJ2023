@@ -20,26 +20,21 @@ public class FloatingMessage : MonoBehaviour
 
     private void Start()
     {
-        SetTimer();
-        //_rigidbdy.velocity = new Vector2(Random.Range(-InitialXVelocityRange, InitialXVelocityRange), InitialYVelocity);
-        //Destroy(gameObject, LifeTime);
+        _rigidbdy.velocity = new Vector2(Random.Range(-InitialXVelocityRange, InitialXVelocityRange), InitialYVelocity);
+        Destroy(gameObject, LifeTime);
 
     }
     private void Update()
     {
-        timer -= Time.deltaTime;
-        if (timer <= 0)
-        {
-            gameObject.SetActive(false);
-        }
+        //timer -= Time.deltaTime;
+        //if (timer <= 0)
+        //{
+        //    //gameObject.SetActive(false);
+        //}
     }
-    public void SetTimer()
-    {
-        timer = LifeTime;
-    }
+
     public void SetMessage(string msg)
     {
-        Debug.Log(msg + "this is my damage");
         _damageValue.SetText(msg);
     }
 }

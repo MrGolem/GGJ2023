@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class LoseWindow : MonoBehaviour {
   [SerializeField]
   private CanvasGroup _canvasGroup;
-  
-  [SerializeField]
+
+    [SerializeField]
   private Button _choseButtons;
 
   private void Awake() {
