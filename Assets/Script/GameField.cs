@@ -32,6 +32,8 @@ public class GameField : MonoBehaviour {
     Player.SetCharacter(Game.FightData._playerCharacter);
     Enemy.SetCharacter(Game.FightData._enemyCharacter);
     
+    Game.BattleIsOver = false;
+    
     
     if(Game.FightData._assistantCharacter != null)
       Assistant.SetCharacter(Game.FightData._assistantCharacter);
@@ -47,21 +49,20 @@ public class GameField : MonoBehaviour {
   }
 
   private void PlayerTeamAttack() {
-    if (Game.FightData._playerCharacter.CurrentHealth <= 0) {
-      Player.Dead();
-      var sequence = DOTween.Sequence();
-      sequence.AppendInterval(0.75f);
-      sequence.OnKill(() => Events.Fight.OpenLoseMenu?.Invoke());
-      return;
-    }
+    
 
       Player.OnAttackComplete = () => {
-      if (Assistant._characterStatsConfig == null) {
+        if(Game.BattleIsOver) return;
+
+        if (Assistant._characterStatsConfig == null) {
+          Events.StateControllerEvent.StartState(GameStateEnum.EnemyTeamAttack);
+          return;
+        }
+
+        Assistant.OnAttackComplete = () => {
+        if(Game.BattleIsOver) return;
         Events.StateControllerEvent.StartState(GameStateEnum.EnemyTeamAttack);
-        return;
-      }
-    
-      Assistant.OnAttackComplete = () => { Events.StateControllerEvent.StartState(GameStateEnum.EnemyTeamAttack); };
+      };
       Assistant.DealDamage();
     };
     
@@ -70,14 +71,10 @@ public class GameField : MonoBehaviour {
   }
 
   private void EnemyTeamAttack() {
-    if (Game.FightData._enemyCharacter.CurrentHealth <= 0) {
-      Enemy.Dead();
-      var sequence = DOTween.Sequence();
-      sequence.AppendInterval(0.75f);
-      sequence.OnKill(() => Events.Fight.OpenWinMenu?.Invoke());
-    }
-    
+
     Enemy.OnAttackComplete = () => {
+      if(Game.BattleIsOver) return;
+      
       Events.StateControllerEvent.StartState(GameStateEnum.Wait);
     };
     
@@ -96,12 +93,38 @@ public class GameField : MonoBehaviour {
     switch (unitType) {
       case UnitType.Player:
         Enemy.GetDamage(damage);
+        
+        if (Game.FightData._enemyCharacter.CurrentHealth <= 0) {
+          Game.BattleIsOver = true;
+          Enemy.Dead();
+          var sequence = DOTween.Sequence();
+          sequence.AppendInterval(0.75f);
+          sequence.OnKill(() => Events.Fight.OpenWinMenu?.Invoke());
+        }
         break;
       case UnitType.Enemy:
         Player.GetDamage(damage);
+        
+        if (Game.FightData._playerCharacter.CurrentHealth <= 0) {
+          Game.BattleIsOver = true;
+          Player.Dead();
+          var sequence = DOTween.Sequence();
+          sequence.AppendInterval(0.75f);
+          sequence.OnKill(() => Events.Fight.OpenLoseMenu?.Invoke());
+          return;
+        }
+        
         break;
       default:
         Enemy.GetDamage(damage);
+        
+        if (Game.FightData._enemyCharacter.CurrentHealth <= 0) {
+          Game.BattleIsOver = true;
+          Enemy.Dead();
+          var sequence = DOTween.Sequence();
+          sequence.AppendInterval(0.75f);
+          sequence.OnKill(() => Events.Fight.OpenWinMenu?.Invoke());
+        }
         break;
     }
   }

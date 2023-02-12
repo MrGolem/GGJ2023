@@ -21,6 +21,8 @@ public class Game : MonoBehaviour
 
    private static Game Instance;
 
+   public static bool BattleIsOver = false;
+
    [SerializeField]
    private PlayerMap _playerOnMap;
    [SerializeField]
@@ -37,12 +39,21 @@ public class Game : MonoBehaviour
       
       InitParams();
       InitGame();
-
+      
+      SceneManager.sceneLoaded += SceneManagerOnsceneLoaded;
       Events.Fight.StartFight += StartFight;
+   }
+
+   private void SceneManagerOnsceneLoaded (Scene arg0, LoadSceneMode arg1) {
+      if (arg0.name == "MainMenu") {
+         Instance = null;
+         Destroy(gameObject);
+      }
    }
 
    private void OnDestroy() {
       Events.Fight.StartFight -= StartFight;
+      SceneManager.sceneLoaded -= SceneManagerOnsceneLoaded;
    }
 
    private void StartFight (Character character) {

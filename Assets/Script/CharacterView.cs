@@ -63,7 +63,7 @@ public class CharacterView : MonoBehaviour {
 
   public void GetDamage(int damage) {
 
-    damageMessageSpawner.SpawnMessage(damage.ToString());
+    damageMessageSpawner.SpawnMessage((damage + -_characterStatsConfig.Armor).ToString() );
     
 
     _HighlightDamage?.Kill();
